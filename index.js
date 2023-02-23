@@ -30,9 +30,20 @@
 /*What is the maximum age from a group of footballer’s age. [31, 20, 28, 18, 22]. */ 
 
 
-const ages = [31, 20, 28, 18, 22];
-let maxAge = ages.reduce((acc, curr) => Math.max(acc, curr));
-console.log(maxAge);
+// const ages = [31, 20, 28, 18, 22];
+// let maxAge = ages.reduce((acc, curr) => Math.max(acc, curr));
+// console.log(maxAge);
 
 // Output
 // >> 31
+
+// --------------------------------------------------
+
+/*Sum all the elements in the array which has a initial value of 10. Elements = [5, 10, 15, 20, 25]. */ 
+
+
+const numbers = [5, 10, 15, 20, 25];
+let sum = numbers.reduce((acc, curr) => acc * curr, 10);
+
+console.log(sum);
+// > 85
