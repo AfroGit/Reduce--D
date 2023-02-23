@@ -17,9 +17,22 @@
 /*Concatenate all elements in an array of strings to form one sentence. words = [“Studying”, “JavaScript”, “is”, “fun”, “and”, “interesting”]; */ 
 
 
-const words = ["Studying", "Javascript", "is", "fun", "and", "interesting."];
-const sentence = words.reduce((acc, current) => `${acc} ${current}`);
-console.log(sentence);
+// const words = ["Studying", "Javascript", "is", "fun", "and", "interesting."];
+// const sentence = words.reduce((acc, current) => `${acc} ${current}`);
+// console.log(sentence);
 
-Output
-Studying Javascript is fun and interesting.
+// Output
+// Studying Javascript is fun and interesting.
+
+// -------------------------------------------------
+
+
+/*What is the maximum age from a group of footballer’s age. [31, 20, 28, 18, 22]. */ 
+
+
+const ages = [31, 20, 28, 18, 22];
+let maxAge = ages.reduce((acc, curr) => Math.max(acc, curr));
+console.log(maxAge);
+
+// Output
+// >> 31
