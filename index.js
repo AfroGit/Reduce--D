@@ -31,7 +31,7 @@
 
 
 const ages = [31, 20, 28, 18, 22];
-let maxAge = ages.reduce((acc, curr) => Math.min(acc, curr));
+let maxAge = ages.reduce((acc, curr) => Math.max(acc, curr));
 console.log(maxAge);
 
 // Output
