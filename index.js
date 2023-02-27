@@ -42,8 +42,22 @@
 /*Sum all the elements in the array which has a initial value of 10. Elements = [5, 10, 15, 20, 25]. */ 
 
 
-const numbers = [5, 10, 15, 20, 25];
-let sum = numbers.reduce((acc, curr) => acc * curr, 10);
+// const numbers = [5, 10, 15, 20, 25];
+// let sum = numbers.reduce((acc, curr) => acc + curr, 10);
 
-console.log(sum);
-// > 85
+// console.log(sum);
+// // > 85
+
+// ---------------------------------------------------
+
+/*Find the occurrence of each animal in the array: [“lion”, “dog”, “lion”, “fish”, “zebra”, “lion”, “dog”, “zebra”]. */
+
+const animals = ["lion", "dog", "lion","fish","zebra","lion","dog","zebra"];
+const count = animals.reduce((acc, curr) => {
+   acc[curr] = (acc[curr] || 0) + 1;
+   return acc;
+}, {});
+console.log(count);
+
+// Output
+// {lion: 3, dog: 2, fish: 1, zebra: 2}
